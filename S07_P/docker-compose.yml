@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:latest
+    container_name: springbootcont
+    # 직접 켜기 전까지는 자동으로 실행되지 않도록 설정
+    restart: "no"
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: springbootdb
+#    volumes:
+      # 데이터를 보존하고 싶다면 로컬 폴더와 연결 (선택 사항)
+#      - ./mysql_data:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
