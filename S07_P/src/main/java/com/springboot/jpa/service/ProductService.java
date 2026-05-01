@@ -1,7 +1,7 @@
 package com.springboot.jpa.service;
 
 import com.springboot.jpa.data.dto.ProductDto;
-import com.springboot.jpa.data.entity.ProductResponseDto;
+import com.springboot.jpa.data.dto.ProductResponseDto;
 
 public interface ProductService {
 

@@ -2,7 +2,7 @@ package com.springboot.jpa.controller;
 
 import com.springboot.jpa.data.dto.ChangeProductNameDto;
 import com.springboot.jpa.data.dto.ProductDto;
-import com.springboot.jpa.data.entity.ProductResponseDto;
+import com.springboot.jpa.data.dto.ProductResponseDto;
 import com.springboot.jpa.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
