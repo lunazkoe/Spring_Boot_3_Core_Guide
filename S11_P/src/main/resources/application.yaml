@@ -1,3 +1,22 @@
 spring:
   application:
     name: S11_P
+
+info:
+  organization:
+    name: "wikibooks"
+  contact:
+    email: "thinkground.flature@gmail.com"
+    phoneNumber: "010-1234-5678"
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
